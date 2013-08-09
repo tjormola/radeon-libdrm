@@ -10,7 +10,6 @@ Sources:
 Description: |
     %{summary}
 Files:
-    - "%doc README"
     - "%{_libdir}/libdrm.so.*"
     - "%{_libdir}/libkms.so.*"
 
@@ -43,7 +42,6 @@ SubPackages:
           - "%{name}-radeon = %{version}-%{release}"
           - kernel-headers
       Files:
-          - "%{_includedir}/omap/omap_drm.h"
           - "%{_includedir}/libdrm/*.h"
           - "%{_includedir}/*.h"
           - "%{_libdir}/lib*.so"

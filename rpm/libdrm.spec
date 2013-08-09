@@ -92,7 +92,6 @@ cd ..
 
 %files
 %defattr(-,root,root,-)
-%doc README
 %{_libdir}/libdrm.so.*
 %{_libdir}/libkms.so.*
 # >> files
@@ -106,7 +105,6 @@ cd ..
 
 %files devel
 %defattr(-,root,root,-)
-%{_includedir}/omap/omap_drm.h
 %{_includedir}/libdrm/*.h
 %{_includedir}/*.h
 %{_libdir}/lib*.so
