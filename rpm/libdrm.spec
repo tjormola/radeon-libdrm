@@ -57,6 +57,7 @@ Requires:   kernel-headers
 %build
 unset LD_AS_NEEDED
 # >> build pre
+cd libdrm
 # << build pre
 
 %reconfigure --disable-static \
@@ -67,15 +68,18 @@ unset LD_AS_NEEDED
 make %{?jobs:-j%jobs}
 
 # >> build post
+cd ..
 # << build post
 
 %install
 rm -rf %{buildroot}
 # >> install pre
+cd libdrm
 # << install pre
 %make_install
 
 # >> install post
+cd ..
 # << install post
 
 %post -p /sbin/ldconfig
