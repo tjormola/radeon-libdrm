@@ -9,7 +9,7 @@ Name:       libdrm
 # << macros
 
 Summary:    Direct Rendering Manager runtime library
-Version:    2.4.0
+Version:    2.4.46
 Release:    1
 Group:      System/Libraries
 License:    MIT
